@@ -28,9 +28,18 @@
 }
 
 .post{
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px ;
+    @media all and (min-width:768px) {
+    margin:0px 15px 15px 0px;
+}
   &__title{
     margin: 15px 0px 5px 0px;
+       @media all and (min-width:768px) {
+    margin:0px 15px 15px 0px;
+}
   }
   &__paragraph{
     margin: 15px 0px 15px 0px;
@@ -40,6 +49,7 @@
    background-color: rgb(4, 109, 74);
    color: white;
    margin-bottom: 10px;
+   align-self:flex-start;
   }
 }
 
@@ -55,10 +65,12 @@
 }
   &__title{
     text-align: center;
+    margin-bottom: 15px
   }
   &__img{
     width: 200px;
     height: 150px;
+  margin-bottom: 15px
   }
   &__paragraph{
     text-align: justify;
