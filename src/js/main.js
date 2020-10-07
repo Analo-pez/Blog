@@ -17,7 +17,7 @@ $(document).ready(function () {
         },
         {
             title: "Prueba título 2",
-            date: 'Publicado el ' + moment().day() + " de "+ moment().format("MMMM YYYY"),
+            date: 'Publicado el ' + moment().format("D MMMM YYYY"),
             content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur aliquam eaque, porro itaque eligendi. Placeat nisi aspernatur itaque, nam omnis numquam, harum repellat expedita ab soluta facere, vero vel. Lorem ipsum dolor sit amet  consectetur adipisicing elit. Eaque at repellat ex consequuntur blanditiis maxime, placeat dignissimos labore consectetur, numquam officia voluptatum dolores ut suscipit error ducimus aut  mollitia alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores, deserunt eveniet doloribus beatae excepturi doloremque vel libero at, assumenda sapiente delectus officiis quidem facere dolor quae, officia veritatis et"
         },
         

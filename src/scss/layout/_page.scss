@@ -29,7 +29,6 @@
 
 .post{
   padding-right: 30px;
-  border: 1px solid red;
   &__title{
     margin: 15px 0px 5px 0px;
   }
@@ -40,6 +39,7 @@
   &__button{
    background-color: rgb(4, 109, 74);
    color: white;
+   margin-bottom: 10px;
   }
 }
 
