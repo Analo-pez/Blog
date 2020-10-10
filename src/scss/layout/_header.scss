@@ -10,8 +10,8 @@
   &__title{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
-  background-color: rgb(4, 109, 74);
-  color: white;
+  background-color: $color-principal;
+  color:$color-light;
   text-align: center;
   @media all and (min-width:768px) {
     letter-spacing: 2px;   
@@ -31,21 +31,21 @@
 }
 
 .menu{
-  color: white;
+  color: $color-light;
   padding: 5px;
   margin-bottom: 15px;
   @media all and (min-width:768px) {
     text-transform: uppercase;
-    background-color: rgb(58, 54, 54);
+    background-color:$color-darkMedium;
   }
   &__items{
     display: flex;
     justify-content: space-around;
     :hover{
-      background-color: rgb(4, 109, 74);
+      background-color:$color-principal;
     }
     li{
-      background-color: rgb(58, 54, 54);
+      background-color: $color-darkMedium;
       padding: 5px;
     }
   }

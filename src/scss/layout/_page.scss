@@ -4,12 +4,12 @@
 }
 
 .global{
-  background-color: white;
+  background-color:$color-light;
   width: 80%;
   margin: 0px auto;
   margin-top: 30px;
   padding: 20px;
-  box-shadow: 0px 0px 2px grey;
+  box-shadow: 0px 0px 2px $color-secondary;
   @media all and (min-width:768px) {
     width: 75%;
   }
@@ -46,8 +46,8 @@
     text-align: justify;
   }
   &__button{
-   background-color: rgb(4, 109, 74);
-   color: white;
+   background-color: $color-principal;
+   color:$color-light;
    margin-bottom: 10px;
    align-self:flex-start;
   }
@@ -58,7 +58,7 @@
   flex-direction: column;
   align-items: center;
   padding: 15px ;
-  background-color: rgb(142, 233, 190);
+  background-color:$color-special;
   margin-bottom: 15px;
   @media all and (min-width:768px) {
     margin-bottom: 0px;
@@ -84,4 +84,48 @@ height: 180px  !important;
 @media all and (min-width:768px) {
   height: 250px !important;
 }
+}
+
+.themeSelector{
+  border: 2px solid black;
+ background-color: $color-dark;
+  width: 40px;
+  height: 100px;
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  top: 40%;
+  &__green {
+    width: 25px;
+    height: 25px;
+    background-color: $color-principal;
+  }
+  &__red{
+    width: 25px;
+    height: 25px;
+    background-color: $color-blood;
+}
+ &__blue{
+    width: 25px;
+    height: 25px;
+    background-color: $color-sky;
+  }
+}
+
+.red{
+  background-color: $color-blood !important;
+}
+.redImg{
+  background-image: url("../../assets/images/rojo.jpg");
+  background-attachment: fixed;
+}
+.blue{
+  background-color: $color-sky !important;
+}
+.blueImg{
+  background-image: url("../../assets/images/cielo.jpg");
+  background-attachment: fixed;
 }

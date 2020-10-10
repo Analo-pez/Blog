@@ -1,5 +1,5 @@
 .footer { 
-  background-color: grey;
+  background-color: $color-secondary;
     opacity: 80%;
     height: 50px;  
     margin-top: 20px;
@@ -11,9 +11,9 @@
   }
   &__btn{
     font-size: 20px;
-    background-color: black;
+    background-color: $color-dark;
     padding: 5px;
     border-radius: 25px;
-    color: white
+    color: $color-light
   }
 }
