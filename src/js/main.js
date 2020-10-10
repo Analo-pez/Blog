@@ -20,6 +20,16 @@ $(document).ready(function () {
             date: 'Publicado el ' + moment().format("D MMMM YYYY"),
             content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur aliquam eaque, porro itaque eligendi. Placeat nisi aspernatur itaque, nam omnis numquam, harum repellat expedita ab soluta facere, vero vel. Lorem ipsum dolor sit amet  consectetur adipisicing elit. Eaque at repellat ex consequuntur blanditiis maxime, placeat dignissimos labore consectetur, numquam officia voluptatum dolores ut suscipit error ducimus aut  mollitia alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores, deserunt eveniet doloribus beatae excepturi doloremque vel libero at, assumenda sapiente delectus officiis quidem facere dolor quae, officia veritatis et"
         },
+        {
+            title: "Prueba título 3",
+            date: 'Publicado el ' + moment().format("D MMMM YYYY"),
+            content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur aliquam eaque, porro itaque eligendi. Placeat nisi aspernatur itaque, nam omnis numquam, harum repellat expedita ab soluta facere, vero vel. Lorem ipsum dolor sit amet  consectetur adipisicing elit. Eaque at repellat ex consequuntur blanditiis maxime, placeat dignissimos labore consectetur, numquam officia voluptatum dolores ut suscipit error ducimus aut  mollitia alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores, deserunt eveniet doloribus beatae excepturi doloremque vel libero at, assumenda sapiente delectus officiis quidem facere dolor quae, officia veritatis et"
+        },
+        {
+            title: "Prueba título 4",
+            date: 'Publicado el ' + moment().format("D MMMM YYYY"),
+            content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur aliquam eaque, porro itaque eligendi. Placeat nisi aspernatur itaque, nam omnis numquam, harum repellat expedita ab soluta facere, vero vel. Lorem ipsum dolor sit amet  consectetur adipisicing elit. Eaque at repellat ex consequuntur blanditiis maxime, placeat dignissimos labore consectetur, numquam officia voluptatum dolores ut suscipit error ducimus aut  mollitia alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores, deserunt eveniet doloribus beatae excepturi doloremque vel libero at, assumenda sapiente delectus officiis quidem facere dolor quae, officia veritatis et"
+        },
 
     ]
 
@@ -36,6 +46,8 @@ $(document).ready(function () {
         $(".posts").append(post);
     });
 
+
+    //EVENTO JAVASCRIPT PARA CAMBIAR TEMAS
     const title = document.querySelector(".logo__title");
     const btns = document.querySelectorAll(".post__button");
     const page = document.querySelector(".page");
@@ -74,5 +86,16 @@ $(document).ready(function () {
     for (const theme of themes) {
         theme.addEventListener('click', paintTheme)
     }
+
+    // ANIMACION SCROLL
+    $(".footer__btn").click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
+
+
 
 });
