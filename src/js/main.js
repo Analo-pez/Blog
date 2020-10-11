@@ -96,6 +96,25 @@ $(document).ready(function () {
         return false;
     });
 
+    // LOGIN FALSE
+    $(".sidebar__form").submit(function () {
+        let inputName = $(".sidebar__form--name").val();
+        localStorage.setItem("name", inputName)
+        let inputPswrd = $(".sidebar__form--pswrd").val();
+        localStorage.setItem("password", inputPswrd)
+    })
+    let nameLog = localStorage.getItem("name");
+    let passwordLog = localStorage.getItem("password");
+
+    if (nameLog && passwordLog) {
+        $(".sidebar__paragraph").html("Welcome, " + nameLog + "<br><br><a class='logout' href='#'>Cerrar sesión</a>");
+        $(".sidebar__form").hide();
+        $(".logout").click(function () {
+            localStorage.clear();
+            location.reload();
+        })
+    }
+
 
 
 });

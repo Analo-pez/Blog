@@ -75,6 +75,21 @@
   &__paragraph{
     text-align: justify;
   }
+  &__form{
+    display: none;
+    @media all and (min-width:768px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      input{
+        margin-bottom: 10px;
+      }
+      &--btn{
+        width: 50%;
+        margin-top: 10px;
+      }
+  }
+}
 }
 
 
